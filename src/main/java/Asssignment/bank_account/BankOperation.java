@@ -18,9 +18,9 @@ public class BankOperation {
 	private BankOperation(String name,long accno,float balance){
 		Account ac = new Account(name, accno, balance);
 		int k=0;
-		for(  i=0; i< list.size(); i++)
+		for(  int s=0; s< list.size(); s++)
 		{
-			if(list.get(i).accno == accno)
+			if(list.get(s).accno == accno)
 			{
 				k=1;
 				log.info("Account Number already exists");
